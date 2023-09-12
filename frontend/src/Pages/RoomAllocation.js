@@ -17,7 +17,7 @@ const RoomAllocation = () => {
 
     const getStudents = async () => {
         try {
-            const response = await fetch(`http://localhost:7000/get_students_for_room_allocation?hostel_id=${state.ans}`, {
+            const response = await fetch(`https://final1-o8cm.onrender.com/get_students_for_room_allocation?hostel_id=${state.ans}`, {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
             });

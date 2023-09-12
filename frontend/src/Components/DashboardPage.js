@@ -48,7 +48,7 @@ const DashboardPage = () => {
 
     const fetchAllHostel = async () => {
         try {
-            const response = await fetch("http://localhost:7000/gethostel_id/where/status_active", {
+            const response = await fetch("https://final1-o8cm.onrender.com/gethostel_id/where/status_active", {
                 method: "GET",
                 headers: { "Content-Type": "application/json" },
             });
